@@ -41,7 +41,7 @@
     .header__list{
         padding: 0 40px;
     }
-    .navbar__list-item{
+    .navbar__list-item a{
         font-size: 18px;
     }
 }

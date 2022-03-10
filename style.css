@@ -30,7 +30,6 @@ body{
 .main{
     width: 100%;
     max-width: 1920px;
-    /* height: 1080px; */
     border-radius: 20px;
     background: url(./img/background.png) center / cover no-repeat;
     position: relative;
@@ -55,12 +54,16 @@ body{
     padding-right: 170px;
 }
 
+.header__logo-link{
+    display: flex;
+    align-items: center;
+}
+
 .header__logo p{
     font-family: Saira;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    /* line-height: 38px; */
     line-height: 1.58;
     color: #fff;
 } 
@@ -88,7 +91,6 @@ body{
     font-style: italic;
     font-weight: normal;
     font-size: 24px;
-    /* line-height: 29px;   */
     line-height: 1.2;  
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.6);
@@ -110,10 +112,10 @@ body{
     transition: right linear 0.1s;
 }
 
-.header__contact span{
+.header__contact a{
     font-family: Lato;
     font-style: normal;
-    /* line-height: 29px; */
+    color: #FFFFFF;
     line-height: 1.2;
     text-transform: capitalize;
     margin-left: 10px;
@@ -138,23 +140,26 @@ body{
     justify-content: space-between;
 }
 
-.navbar__list-item{
+.navbar__list-item{   
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar__list-item a{
     font-family: Lato;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    /* line-height: 29px; */
     line-height: 1.2;
     color: #fff;
-    list-style: none;
-    cursor: pointer;
     position: relative;
     right: 0;
     transition: right linear 0.1s;
 }
 
 .header__contact:hover,
-.navbar__list-item:hover{
+.header__contact:hover a,
+.navbar__list-item a:hover{
     color: rgba(255, 255, 255, 0.6);
     right: -6px;
 }
@@ -172,7 +177,6 @@ body{
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
-    /* line-height: 54px; */
     line-height: 1.5;
     margin: 0;
     color: #fff;
@@ -186,7 +190,6 @@ body{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    /* line-height: 24px; */
     line-height: 1.2;
     color: #fff;
     background-color: #357B95;
@@ -210,7 +213,6 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    /* line-height: 24px; */
     line-height: 1.2;
     color: #fff;
     margin-right: 10px;
@@ -218,7 +220,6 @@ body{
 
 .details__des i{
     font-size: 20px;
-    /* line-height: 24px; */
     line-height: 1.2;
     color: #fff;
     margin-bottom: -3px;
@@ -297,14 +298,13 @@ body{
 .location__list-item-btn{
     text-transform: capitalize;
     text-align: center;
-    padding: 17px 0;
+    padding: 17px 78px;
     margin-top: 34px;
     margin: 34px 20px;
     font-family: Lato;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    /* line-height: 24px; */
     line-height: 1.2;
     color: #fff;
     background-color: #357B95;
